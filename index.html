@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全民枪战2 武器图鉴</title>
+<meta name="description" content="《全民枪战2》武器属性数据库（玩家整理），按系列浏览、搜索、筛选与排序。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>全民枪战2 武器图鉴</h1>
+  <span class="sub" id="meta"></span>
+  <label class="series-select-wrap">系列
+    <select id="seriesSelect" aria-label="选择系列"></select>
+  </label>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="系列列表">
+    <ul id="seriesList"></ul>
+  </nav>
+  <main class="main">
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="搜索武器名 / 特殊属性…" autocomplete="off">
+      <select id="typeFilter" aria-label="武器类型"></select>
+      <select id="sortBy" aria-label="排序"></select>
+      <span class="count" id="count"></span>
+    </div>
+    <h2 class="cur-title" id="curTitle"></h2>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>没有符合条件的武器</p>
+    <footer class="foot">数据为玩家自发整理，非官方。《全民枪战2》相关素材版权归原厂商所有。
+      <a href="https://github.com/q1dw83/qmqz-weapons">GitHub 仓库</a></footer>
+  </main>
+</div>
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal-close" data-close aria-label="关闭">×</button>
+    <h2 id="mTitle"></h2>
+    <div class="m-sub" id="mSub"></div>
+    <div class="m-gallery" id="mGallery"></div>
+    <table class="m-table" id="mTable"></table>
+  </div>
+</div>
+<div class="loading" id="loading">加载中…</div>
+<script src="app.js"></script>
+</body>
+</html>
