@@ -2,6 +2,12 @@
 
 从游戏百科截图整理的《全民枪战2》武器属性表，便于查询与筛选。
 
+## 在线浏览
+
+👉 **https://q1dw83.github.io/qmqz-weapons/**
+
+按系列浏览全部武器，支持名称搜索、武器类型筛选、按伤害/射速/精度/穿甲/跑动/英雄打击/弹匣容量排序；点击卡片查看大图（含多皮肤）和完整属性。页面为纯静态（`index.html` + `app.js` + `style.css`），本地可用 `python3 -m http.server` 预览。新增截图后运行 `python3 tools/build_shots_index.py` 更新 `shots_index.json`（缩略图与皮肤图索引）。
+
 ## 内容
 
 - `weapons.json`：主数据（988 把，48 个系列）
