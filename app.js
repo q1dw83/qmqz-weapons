@@ -147,7 +147,7 @@
       if (state.series !== ALL && (w['系列'] || '未分类') !== state.series) return false;
       if (state.type && (w['武器类型'] || '未知') !== state.type) return false;
       if (q) {
-        var hay = ((w['武器名'] || '') + ' ' + (w['特殊属性'] || '') + ' ' + (w['技能'] || '') + ' ' + (w['击败特效'] || '')).toLowerCase();
+        var hay = ((w['武器名'] || '') + ' ' + (w['特殊属性'] || '') + ' ' + (w['技能'] || '') + ' ' + (w['芯片效果'] || '') + ' ' + (w['击败特效'] || '')).toLowerCase();
         if (hay.indexOf(q) < 0) return false;
       }
       return true;
